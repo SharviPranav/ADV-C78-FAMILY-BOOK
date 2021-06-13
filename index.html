@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<title>My Family Book</title>
+<body>
+    <h1>Family Book</h1>
+    <hr> <hr>
+    <center>
+    <img id="family_img" src="FB1.jpg" height="50%" width="50%">
+</center>
+    <h3 id="one"> Our Family Book</h3>
+    <button type="button" onclick="family()">Next</button>
+    <hr>
+    <script>
+        var names=[
+"1. My Father (Pranav Andhare)",
+"2. My Mother (Shweta Andhare)",
+"3. My Sister (Shlesha  Andhare)",
+"4.  Me  (Sharvi Andhare)",
+"5. My Grand Father (Chandrakant Andhare)",
+"6. My  Grand Mother (Rohini Andhare)",
+        ]
+        var images=[
+            "papa.jpeg",
+            "Mummy.jpeg",
+            "didi.jpeg",
+            "sharvi.jpeg",
+            "aba.jpeg",
+            "aji.jpeg"
+        ]
+        var i=0;
+        function family(){
+            document.getElementById("one").innerHTML[i];
+            document.getElementById("family_img").src=images[i];
+            i++;
+            if(i==6){
+                i=0
+            }}
+    </script>
+</body>
+</html>
